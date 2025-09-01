@@ -1,0 +1,33 @@
+TestCase 1
+All 4 choose 3 combinations:
+We compute the constant term c (i.e. f(0)) using Lagrange Interpolation on each of these:
+
+Points: (1,4), (2,7), (3,12) → c = 1
+
+Points: (1,4), (2,7), (6,39) → c = 1
+
+Points: (1,4), (3,12), (6,39) → c = 1
+
+Points: (2,7), (3,12), (6,39) → c = 1
+
+All combinations give the same constant c = 1.
+
+Output:
+Secret from input1.json: 1
+
+------------------------------------------------------------
+
+TestCase 2
+Try combinations:
+(1,4), (2,7), (3,12) → c = 1
+
+(1,4), (2,7), (6,43) → c = 5
+
+(1,4), (3,12), (6,43) → c = 9
+
+(2,7), (3,12), (6,43) → c = 17
+
+Different values of c from each combination.
+
+Output:
+Inconsistent secrets in input2.json: [1, 5, 9, 17]
